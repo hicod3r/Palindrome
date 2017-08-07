@@ -17,9 +17,13 @@ public class PalindromeChallengeTest{
 		
 		PalindromeFunctions function = new PalindromeFunctions();
 		
-		for( int i = 0 ; i <= 19; i++)	
-			assertEquals(testString[i],function.printPalindromeBase(i));
-		
+		for( int i = 0 ; i <= 19; i++) {	
+			
+			String result = function.printPalindromeBase(i);
+			System.out.println(result);
+			
+			assertEquals(testString[i],result);
+		}
 	}
 
 }
